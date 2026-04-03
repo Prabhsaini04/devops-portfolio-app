@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 🔥 SEND EMAIL
       emailjs.send("service_n0oz18v", "template_cmhi83y", {
-        from_name: name,
-        from_email: email,
+        name: name,
+        email: email,
         message: message
       })
       .then(function() {
@@ -73,9 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.reset();
       })
       .catch(function(error) {
-        console.error(error);
-        formFeedback.innerHTML = "❌ Failed to send message";
-      });
+  console.error("EMAILJS ERROR:", error);
+  formFeedback.innerHTML = "❌ Failed to send message";
+});
     });
   }
 
