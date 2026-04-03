@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Professional DevOps Portfolio - Infrastructure Automation, CI/CD, Cloud Architecture">
+  <title>Alex Rivera | DevOps Engineer</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Separate CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-code-branch"></i>
+        <span>devops<span class="logo-accent">.forge</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#tools" class="nav-link">Toolchain</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="resume-btn">
+        <a href="#" id="resumeMockBtn" class="btn-outline"><i class="fas fa-file-alt"></i> Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-terminal"></i> Infrastructure · Automation · Scale
+      </div>
+      <h1>Alex Rivera</h1>
+      <div class="typewriter-container">
+        <span class="prefix">></span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-description">Designing resilient cloud-native systems, automating workflows, and bridging development with operations. 5+ years of experience in high-availability environments.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> Explore Work</a>
+        <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span>99.9%</span><p>Uptime SLA</p></div>
+        <div class="stat-item"><span>200+</span><p>Pipelines automated</p></div>
+        <div class="stat-item"><span>15+</span><p>Cloud projects</p></div>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">bash — zsh</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">➜</span> ~/devops git:(main) <span class="cmd">kubectl get nodes</span></p>
+        <p>NAME          STATUS   ROLES    AGE   VERSION<br>
+        control-plane  Ready    master   78d   v1.28<br>
+        worker-1       Ready    &lt;none&gt;   78d   v1.28<br>
+        worker-2       Ready    &lt;none&gt;   78d   v1.28</p>
+        <p><span class="prompt">➜</span> ~/devops git:(main) <span class="cmd">terraform plan</span><br>
+        Plan: 4 to add, 0 to change, 0 to destroy.</p>
+        <p><span class="green-output">✓ Infrastructure as code ready</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Technologies (Skill chain) -->
+  <section id="tools" class="tools-section">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-cogs"></i> Core toolchain</span>
+      <h2>DevOps & Cloud Ecosystem</h2>
+      <p>Modern stack for building, deploying, and scaling infrastructure</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><i class="fab fa-docker"></i><span>Docker</span><div class="tool-level">containerization</div></div>
+      <div class="tool-card"><i class="fab fa-kubernetes"></i><span>Kubernetes</span><div class="tool-level">orchestration</div></div>
+      <div class="tool-card"><i class="fas fa-code-branch"></i><span>Jenkins</span><div class="tool-level">CI/CD master</div></div>
+      <div class="tool-card"><i class="fas fa-cloud-upload-alt"></i><span>Terraform</span><div class="tool-level">IaC</div></div>
+      <div class="tool-card"><i class="fas fa-chart-line"></i><span>Prometheus</span><div class="tool-level">monitoring</div></div>
+      <div class="tool-card"><i class="fas fa-chart-pie"></i><span>Grafana</span><div class="tool-level">observability</div></div>
+      <div class="tool-card"><i class="fab fa-aws"></i><span>AWS</span><div class="tool-level">cloud infra</div></div>
+      <div class="tool-card"><i class="fas fa-terminal"></i><span>Ansible</span><div class="tool-level">automation</div></div>
+      <div class="tool-card"><i class="fab fa-git-alt"></i><span>GitOps</span><div class="tool-level">ArgoCD</div></div>
+    </div>
+  </section>
+
+  <!-- Metrics / Counter Section -->
+  <section class="metrics">
+    <div class="metrics-container">
+      <div class="metric-card" data-target="5">
+        <i class="fas fa-calendar-alt"></i>
+        <div class="metric-number"><span class="count-num">0</span>+</div>
+        <p>Years Experience</p>
+      </div>
+      <div class="metric-card" data-target="34">
+        <i class="fas fa-project-diagram"></i>
+        <div class="metric-number"><span class="count-num">0</span>+</div>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="metric-card" data-target="124">
+        <i class="fas fa-server"></i>
+        <div class="metric-number"><span class="count-num">0</span>+</div>
+        <p>Nodes Managed</p>
+      </div>
+      <div class="metric-card" data-target="98">
+        <i class="fas fa-rocket"></i>
+        <div class="metric-number"><span class="count-num">0</span>%</div>
+        <p>Automation Coverage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-code"></i> portfolio highlights</span>
+      <h2>Infrastructure & Automation Projects</h2>
+      <p>Real-world implementations of DevOps principles</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-infinity"></i></div>
+        <h3>GitOps Pipeline · ArgoCD</h3>
+        <p>Declarative CD for Kubernetes clusters with automated sync, rollback and multi-environment promotion. Integrated with GitHub Actions.</p>
+        <div class="project-tech">
+          <span>K8s</span><span>ArgoCD</span><span>Helm</span><span>GitHub Actions</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-alert"><i class="fab fa-github"></i> Repository</a>
+          <a href="#" class="project-link demo-alert"><i class="fas fa-external-link-alt"></i> Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <h3>AWS Multi-Region IaC</h3>
+        <p>Terraform modules for high-availability VPC, EKS cluster, RDS and S3 backend with remote state locking. Used in production workloads.</p>
+        <div class="project-tech">
+          <span>Terraform</span><span>AWS</span><span>EKS</span><span>Terragrunt</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-alert"><i class="fab fa-github"></i> Repository</a>
+          <a href="#" class="project-link demo-alert"><i class="fas fa-external-link-alt"></i> Architecture</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Observability Stack</h3>
+        <p>Prometheus + Grafana + Loki full monitoring solution with custom alerts, dashboards, and log aggregation for microservices.</p>
+        <div class="project-tech">
+          <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Alertmanager</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-alert"><i class="fab fa-github"></i> Repository</a>
+          <a href="#" class="project-link demo-alert"><i class="fas fa-external-link-alt"></i> Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-tag"><i class="fas fa-envelope"></i> Let's connect</div>
+        <h2>Collaborate on cloud-native solutions</h2>
+        <p>I'm open for freelance consulting, speaking events, or full-time DevOps roles. Reach out and let's build resilient systems.</p>
+        <div class="social-links">
+          <a href="#" id="socialGithub" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" id="socialLinkedin" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" id="socialTwitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" id="socialEmail" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="direct-email">
+          <i class="fas fa-at"></i> alex.rivera@devops.engineer
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Full name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email address" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Project details / message..." required></textarea>
+            <i class="fas fa-pen"></i>
+          </div>
+          <button type="submit" class="btn-primary submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <div id="formFeedback" class="form-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© <span id="currentYear"></span> Alex Rivera — DevOps Engineer. Built with <i class="fas fa-heart"></i> for automation & reliability.</p>
+      <div class="footer-badge">
+        <i class="fas fa-shield-alt"></i> CI/CD · GitOps · SRE
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
